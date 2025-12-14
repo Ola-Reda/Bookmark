@@ -73,7 +73,7 @@ function displayData() {
         <tr>
             <td>${i+1}</td>
             <td>${list[i].name}</td>
-            <td><button href="${list[i].url}" class="visit-btn rounded"><i class="fa-solid fa-eye me-2"></i>Visit</button></td>
+            <td><a href="${list[i].url}" class="visit-btn rounded"><i class="fa-solid fa-eye me-2"></i>Visit</a></td>
             <td><button class="delete-btn rounded" onclick="deleteData(${i})"><i class="fa-solid fa-trash-can me-2"></i>Delete</button></td>
         </tr>
         `
