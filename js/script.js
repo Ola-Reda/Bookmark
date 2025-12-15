@@ -56,9 +56,9 @@ function addData() {
     clearInputsValues();
     }else {
         Swal.fire({
-            title: "The Internet?",
-            text: "That thing is still around?",
-            icon: "question"
+            title: "Invalid Data",
+            text: `${nameValidation() ? "" : "Site name must contain at least 3 characters"} ${urlValidation() ? "" : "Site URL must be a valid one"}`,
+            icon: "error"
             });
         }
 }
@@ -73,7 +73,7 @@ function displayData() {
         <tr>
             <td>${i+1}</td>
             <td>${list[i].name}</td>
-            <td><a href="${list[i].url}" class="visit-btn rounded"><i class="fa-solid fa-eye me-2"></i>Visit</a></td>
+            <td><a href="${list[i].url}" target="_blank" class="visit-btn rounded"><i class="fa-solid fa-eye me-2"></i>Visit</a></td>
             <td><button class="delete-btn rounded" onclick="deleteData(${i})"><i class="fa-solid fa-trash-can me-2"></i>Delete</button></td>
         </tr>
         `

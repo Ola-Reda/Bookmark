@@ -24,7 +24,7 @@ main h1 {
     width: fit-content;
     margin: auto;
     position: relative;
-    z-index: 1111;
+    z-index: 11;
 }
 
 main h1::after {
