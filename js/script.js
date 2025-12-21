@@ -77,8 +77,8 @@ function displayData() {
             <td><button class="delete-btn rounded" onclick="deleteData(${i})"><i class="fa-solid fa-trash-can me-2"></i>Delete</button></td>
         </tr>
         `
-        box.innerHTML = contentBox
     }
+    box.innerHTML = contentBox
 }
 
 //function to delete data
